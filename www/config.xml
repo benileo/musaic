@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<widget id="com.example.test" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>M u s a i c</name>
+
+    <description>
+        A mosaic of Music. 
+    </description>
+
+    <author email="jammin.irving@gmail.com" href="http://cordova.io">
+        Team Musaic
+    </author>
+
+    <content src="index1.html" />
+        
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+
+</widget>
