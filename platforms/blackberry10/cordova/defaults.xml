@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.test" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:rim="http://www.blackberry.com/ns/widgets">
+    <name>M u s a i c</name>
+    <author>Your Name Here</author>
+    <description>
+       A sample Apache Cordova application that responds to the deviceready event.
+  </description>
+    <license href="http://opensource.org/licenses/alphabetical">
+    </license>
+    <icon src="img/main.jpg" />
+    <content src="index.html" />
+    <rim:permissions>
+        <rim:permit>access_shared</rim:permit>
+    </rim:permissions>
+    <feature id="blackberry.app">
+        <param name="websecurity" value="disable" />
+    </feature>
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+</widget>
