@@ -17,10 +17,10 @@ SC.initialize({
 
   	//Get search term
   	var search_term = $("#search_input").val();
-        $.getJSON(SEARCH_ARTIST_URL + search_term, {limit: 4}, function(tracks) {
+        $.getJSON(SEARCH_ARTIST_URL + search_term, {limit: 5}, function(tracks) {
           $(tracks).each(function(track) {
             
-        $("#soundcloud_results").append('<iframe width="420" height="150" scrolling="no"' +
+        $("#soundcloud_results").append('<iframe width="275" height="100" scrolling="no"' +
          'frameborder="no" src="http://w.soundcloud.com/player/?url='+this.uri+
          '&auto_play=false&color=915f33&show_comments=false&show_playcount=false&show_user=false&single_active=true"></iframe>');
 

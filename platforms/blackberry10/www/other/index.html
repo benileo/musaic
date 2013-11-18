@@ -1,43 +1,312 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
     <head>
         <meta charset="utf-8" />
         <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-        <title>Hello World</title>
+
+        <!-- Stylesheets -->
+    <link href="style/bootstrap.css" rel="stylesheet">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="style/font-awesome.css">
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="style/jquery-ui.css">
+    <!-- Calendar -->
+    <link rel="stylesheet" href="style/fullcalendar.css">
+    <!-- prettyPhoto -->
+    <link rel="stylesheet" href="style/prettyPhoto.css">
+    <!-- Star rating -->
+    <link rel="stylesheet" href="style/rateit.css">
+    <!-- Date picker -->
+    <link rel="stylesheet" href="style/bootstrap-datetimepicker.min.css">
+    <!-- CLEditor -->
+    <link rel="stylesheet" href="style/jquery.cleditor.css">
+    <!-- Uniform -->
+    <link rel="stylesheet" href="style/uniform.default.css">
+    <!-- Bootstrap toggle -->
+    <link rel="stylesheet" href="style/bootstrap-toggle-buttons.css">
+    <!-- Main stylesheet -->
+    <link href="style/style.css" rel="stylesheet">
+    <!-- Widgets stylesheet -->
+    <link href="style/widgets.css" rel="stylesheet">
+    <!-- Responsive style (from Bootstrap) -->
+    <link href="style/bootstrap-responsive.css" rel="stylesheet">
+  
+     <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon/favicon.png">
+
+    <title>M U S A I C</title>
+
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-            <div id="results"></div>
+
+    <!-- The HTML application -->
+    <div class="app">
+      <div id="deviceready" class="blink">
+          <p class="event listening"></p>
+          <p class="event received"></p>
+      </div>
+    </div>
+
+        
+  <div class="navbar navbar-fixed-top">
+
+  <div class="navbar-inner">
+
+
+    <div class="container">
+
+      <!-- Menu button for smallar screens -->
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span>Menu</span>
+      </a>
+
+      <!-- Site name for smallar screens -->
+      <a href="index.html" class="brand hidden-desktop"> M U S A I C </a>
+
+      <!-- Navigation starts -->
+      <div class="nav-collapse collapse">
+
+        <ul class="nav">
+
+          <!-- Upload to server link. Class "dropdown-big" creates big dropdown -->
+          <li class="dropdown dropdown-big">
+            
+            <!-- Dropdown -->
+            <ul class="dropdown-menu">
+              
+
+              <li>
+                <!-- Progress bar -->
+                <p>Loading videos.</p>
+                <!-- Bootstrap pr1ogress bar -->
+                <div class="progress">
+                  <div class="bar bar-important" style="width: 80%;"></div>
+                </div>
+
+                <hr />
+
+              </li>
+
+            </ul>
+          </li>
+        </ul>
+
+
+
+        <!-- Search form -->
+        <form class="navbar-search pull-left">
+          <input type="text" id="search_input" class="search-query" placeholder="Search">
+        </form>
+
+        <!-- Search Options-->
+        
+        <form class="navbar-search pull-left">
+          <input name="embed" id="embed_input" value="false" type="checkbox">Embed?</input>        
+          <input name="limit" id="limit_input" type="text" class="search-query" placeholder="Number of Results"></input>
+          <button type="button" id="search_button">Search</button>
+        </form>
+                
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- Header starts -->
+  <header>
+
+    <div class="container-fluid">
+
+
+      <div class="row-fluid">
+
+        <!-- Logo section -->
+        <div class="span4">
+          <!-- Logo. -->
+        <div class="logo">
+            <h1><a href="#">M U S A I C<span class="bold"></span></a></h1>
+            <p class="meta" class="bold">A mosaic of music.</p>
+          </div>
+          <!-- Logo ends -->
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+
+
+      </div>
+    </div>
+
+  </header>
+
+<!-- Header ends -->
+
+<!-- Main content starts -->
+
+<div class="content">
+
+    <!-- Main bar -->
+    <div class="mainbar">
+
+      <!-- Page heading -->
+      <div class="page-head">
+        <h2 class="pull-left"><i class="icon-home"></i> Dashboard</h2>
+
+        <!-- Breadcrumb -->
+        <div class="bread-crumb pull-right">
+          <a href="index.html"><i class="icon-home"></i> Home</a>
+          <!-- Divider -->
+          <span class="divider">/</span>
+          <a href="#" class="bread-current">Dashboard</a>
+        </div>
+
+        <div class="clearfix"></div>
+
+      </div>
+      <!-- Page heading ends -->
+
+
+         <!-- Matter -->
+
+         <div class="matter">
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="span12">
+
+              <div class="widget">
+                <div class="widget-head">
+                  <div class="pull-left">Youtube</div>
+                  <div class="widget-icons pull-right">
+                    <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                    <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                  <div id="youtube_results" class="padd">
+                    <!-- Content goes here -->
+                  </div>
+                  <div class="widget-foot">
+                    <!-- Footer goes here -->
+                                        <!--<iframe width="420" height="315" src="http://www.youtube.com/embed/rVqAdIMQZlk" frameborder="0" allowfullscreen></iframe>-->
+                  </div>
+                </div>
+              </div>
+
+               <div class="widget">
+                <div class="widget-head">
+                  <div class="pull-left">Soundcloud</div>
+                  <div class="widget-icons pull-right">
+                    <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                    <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                  <div class="padd">
+
+                    <!-- Soundcloud results -->
+                      <div id="soundcloud_results"></div>
+                  </div>
+                  <div class="widget-foot">
+                    <!-- Footer goes here -->
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="widget">
+                <div class="widget-head">
+                  <div class="pull-left">8 Tracks</div>
+                  <div class="widget-icons pull-right">
+                    <a href="#" class="wminimize"><i class="icon-chevron-up"></i></a>
+                    <a href="#" class="wclose"><i class="icon-remove"></i></a>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="widget-content">
+                  <div class="padd">
+                    <!-- Content goes here -->
+
+                    <div id="8tracks_results"></div>
+
+                  </div>
+                  <div class="widget-foot">
+                    <!-- Footer goes here -->
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+                 </div>
+
+                <!-- Matter ends -->
+
+    </div>
+
+   <!-- Mainbar ends -->                 
+   <div class="clearfix"></div>
+
+</div>
+<!-- Content ends -->
+
+<!-- Footer starts -->
+<footer>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span12">
+            <!-- Copyright info -->
+            <p class="copy">Copyright &copy; 2013 | <a href="#"></a> </p>
+      </div>
+    </div>
+  </div>
+</footer>         
+
+<!-- Footer ends -->
+
+<!-- Scroll to top -->
+<span class="totop"><a href="#"><i class="icon-chevron-up"></i></a></span>
+
+<!-- JS -->
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript">
+    app.initialize();
+</script>
+
+<script src="js/plugins/jquery.js"></script> <!-- jQuery -->
+<script src="js/plugins/bootstrap.js"></script> <!-- Bootstrap -->
+<script src="js/plugins/jquery-ui-1.9.2.custom.min.js"></script> <!-- jQuery UI -->
+<script src="js/plugins/fullcalendar.min.js"></script> <!-- Full Google Calendar - Calendar -->
+<script src="js/plugins/jquery.rateit.min.js"></script> <!-- RateIt - Star rating -->
+<script src="js/plugins/jquery.prettyPhoto.js"></script> <!-- prettyPhoto -->
+
+<script type="text/javascript"></script>
+<script src="js/plugins/sparklines.js"></script> <!-- Sparklines -->
+<script src="js/plugins/jquery.cleditor.min.js"></script> <!-- CLEditor -->
+<script src="js/plugins/bootstrap-datetimepicker.min.js"></script> <!-- Date picker -->
+<script src="js/plugins/jquery.uniform.min.js"></script> <!-- jQuery Uniform -->
+<script src="js/plugins/jquery.toggle.buttons.js"></script> <!-- Bootstrap Toggle -->
+<script src="js/plugins/filter.js"></script> <!-- Filter for support page -->
+<script src="js/plugins/custom.js"></script> <!-- Custom codes -->
+<script src="js/plugins/charts.js"></script> <!-- Charts & Graphs -->
+
+<!-- Access Scripts -->
+<script src="https://connect.soundcloud.com/sdk.js"></script>
+<script src="js/access/soundcloud.js"></script>
+<script src="js/access/8tracks.js"></script>
+<script src="js/access/youtube.js"></script>
+<script src="js/access/glue.js"></script>
+
+</body>
 </html>

@@ -15,7 +15,7 @@ function search8tracks() {
   $.getJSON(SEARCH_8TRACKS_URL + search_term, {limit: 5}, function(tracks) {
     $(tracks.mixes).each(function(track) { 
       $("#8tracks_results").append('<iframe src="' + this.restful_url +'/player_v3_universal" ' +
-        'width="300" height="250" style="border: 0px none;"></iframe>' +
+        'width="275" height="250" style="border: 0px none;"></iframe>' +
       '<p class="_8t_embed_p" style="font-size: 11px; line-height: 12px;">' +
       '<a href="">Neverland</a> from <a href="">moraesfelipe</a> on ' +
       '<a href="http://8tracks.com">8tracks Radio</a>.</p>');
