@@ -9,9 +9,7 @@ var limit = 5;
 function search(){
 	
 	search8tracks();
-	
 	searchYoutube();
-
 	searchSoundcloud();
 
 

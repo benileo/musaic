@@ -12,7 +12,7 @@ function search8tracks() {
   //Get search term
   var search_term = $("#search_input").val();
   
-  $.getJSON(SEARCH_8TRACKS_URL + search_term, {limit: limit}, function(tracks) {
+  $.getJSON(SEARCH_8TRACKS_URL + search_term, {limit: 5}, function(tracks) {
     $(tracks.mixes).each(function(track) { 
       $("#8tracks_results").append('<iframe src="' + this.restful_url +'/player_v3_universal" ' +
         'width="300" height="250" style="border: 0px none;"></iframe>' +
