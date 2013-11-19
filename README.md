@@ -2,7 +2,7 @@ My Music Application:
 
 "A mosaic of music that accesses and embeds links from Soundcloud, Youtube and 8 Tracks within the application"
 
-Created by Ben Irving, Dylan Runkel, Rob Moore, Chris Chaulk and Conner Shocrylas 
+Created by Ben Irving, Dylan Runkel, Rob Moore, Chris Chaulk and Connor Shocrylas 
 
 sudo npm install -g cordova
 
