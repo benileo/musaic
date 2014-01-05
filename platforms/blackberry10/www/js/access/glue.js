@@ -1,15 +1,11 @@
-//---------------- OPTIONS ----------------
-//Embed player widgets
+
 var embed =false;
-//Limit of results to return
 var limit = 5;
 
-//Called when user clicks the search button on top bar (no form submit)
-//$("#search_button").click(function(){
 function search(){
-	//search8tracks();
-	searchYoutube();
 	searchSoundcloud();
+	search8tracks();
+	searchYoutube();
 };
 
 $('input').keydown( function(e) {
@@ -17,3 +13,9 @@ $('input').keydown( function(e) {
         search();
     }
 });
+
+//Called when user clicks the search button on top bar (no form submit)
+// we also need to add a search button
+// 
+
+//$("#search_button").click(function(){
